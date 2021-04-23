@@ -29,6 +29,12 @@ class VectorHeapTest {
 
     @Test
     void getFirst() {
+        VectorHeap<Paciente> vh = new VectorHeap<>();
+        Paciente p1 = new Paciente("Albedo","accidente en laboratorio","B");
+
+        vh.add(p1);
+
+        assertEquals(p1,vh.getFirst());
     }
 
     @Test

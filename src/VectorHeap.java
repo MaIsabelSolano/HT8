@@ -1,5 +1,6 @@
 import java.util.Vector;
 
+
 public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E> {
 
     protected Vector<E> data; // the data, kept in heap order
@@ -110,9 +111,12 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E> {
         }
     }
 
+
     @Override
     public E getFirst() {
-        return null;
+        E devolver = data.firstElement();
+        data.remove(0);
+        return devolver;
     }
 
     public E remove()

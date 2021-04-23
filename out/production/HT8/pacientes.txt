@@ -1,2 +1,3 @@
 Juan Perez,Fractura de Pierna,C
 Maria Ramirez,Apendicitis,C
+Juaquin Rodríguez,Alzhimer,E

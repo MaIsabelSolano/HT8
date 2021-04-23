@@ -1,2 +1,12 @@
 Juan Perez,Fractura de Pierna,C
 Maria Ramirez,Apendicitis,C
+Juaquin Rodríguez,Alzhimer,E
+Katsuru James,fisura en el pie,C
+Adam NN,Meningitis,A
+Mahiru Hiragi,Hemorragia severa,A
+Levi Hubbes,Brazo roto,C
+Oliver Cruz,Muñeca dislocada,C
+Ritsuko Rowe,sangrado nasal,D
+Kooji Atsume,dolor estómacal serio,B
+Mariano Armento,alergia respiratoria,B
+Zeke Roux,hinchazon,D
