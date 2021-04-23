@@ -1,31 +1,34 @@
-public class Paciente<K extends Comparable<K>> implements Comparable<K>{
+public class Paciente implements Comparable<Paciente>{
 
     //K serían Strings
-    private K nombre;
-    private K razon;
-    private K prioridad;
+    private String nombre;
+    private String razon;
+    private String prioridad;
 
-    public Paciente(K nombre, K razon, K prioridad) {
+    public Paciente(String nombre, String razon, String prioridad) {
         this.nombre = nombre;
         this.razon = razon;
         this.prioridad = prioridad;
     }
 
-    public K getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
-    public K getRazon() {
+    public String getRazon() {
         return razon;
     }
 
-    public K getPrioridad() {
+    public String getPrioridad() {
         return prioridad;
     }
 
-    @Override
-    public int compareTo(K o) {
+    public int compareTo(String o) {
         return prioridad.compareTo((o));
     }
 
+    @Override
+    public int compareTo(Paciente p) {
+        return prioridad.compareTo(p.prioridad);
+    }
 }

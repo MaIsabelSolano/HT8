@@ -18,6 +18,7 @@ public class Main {
         int opcion_usuario = 0;
 
         //Obtener la priority queue de pacientes
+        VectorHeap<Paciente> pacientes = new VectorHeap<>();
 
 
         //Iniciar el programa
