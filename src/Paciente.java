@@ -1,12 +1,11 @@
-public class Paciente<K> implements Comparable<K>{
+public class Paciente<K extends Comparable<K>> implements Comparable<K>{
 
     //K serían Strings
-    //T serían char
     private K nombre;
     private K razon;
-    private Character prioridad;
+    private K prioridad;
 
-    public Paciente(K nombre, K razon, Character prioridad) {
+    public Paciente(K nombre, K razon, K prioridad) {
         this.nombre = nombre;
         this.razon = razon;
         this.prioridad = prioridad;
@@ -20,17 +19,13 @@ public class Paciente<K> implements Comparable<K>{
         return razon;
     }
 
-    public char getPrioridad() {
+    public K getPrioridad() {
         return prioridad;
     }
 
     @Override
-    public int compareTo(Character o) {
+    public int compareTo(K o) {
         return prioridad.compareTo((o));
     }
 
-    @Override
-    public int compareTo(K o) {
-        return 0;
-    }
 }
