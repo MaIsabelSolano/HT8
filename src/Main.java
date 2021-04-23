@@ -68,6 +68,11 @@ public class Main {
 
     }
 
+    /**
+     *
+     * @return Un vector heap formado por pacientes
+     * @throws FileNotFoundException
+     */
     public static VectorHeap<Paciente> lectorArchivo() throws FileNotFoundException{
         VectorHeap<Paciente> ListadoPacientes = new VectorHeap<>();
         File pacientes = new File("pacientes.txt");
